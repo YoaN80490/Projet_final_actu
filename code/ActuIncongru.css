@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rajdhani&family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --blanc_principal:#FFFF;
+    --blanc_secondaire:#ECECEC;
+    --blanc_gris:#D0D0D0;
+    --bleu_ciel:#089AD4;
+    --bleu_fonce:#1B2D45;
+    --noir_principal:#2C2D33;
+    --noir_secondaire:#23242A;
+    --noir:#1C1D21;
+}
+
+/**       HEADER        **/
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    
+}
+nav img{
+    width: 180px;
+}
+
+nav i{
+    color: var(--blanc_principal);
+    width: 32px;
+    margin-top: 7px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--blanc_principal);
+    font-weight: bold;
+
+}
+.nav{
+    background-color: var(--noir);
+}
+
+.menu{
+    margin-left: -100%;
+}
+
+.active .menu{
+    margin-left: 0% !important;
+    background-color: var(--noir);
+}
+
+#icon:before {
+    content: "\2630" ;
+    font-size: 20px;
+}
+
+.active #icon:before {
+    content: "\2715";
+    font-size: 20px;
+}
+#icon{
+    color: var(--blanc_principal);
+}
+nav li{
+    line-height: 32px;
+    font-size: calc(15px + 0.5vw);
+}
