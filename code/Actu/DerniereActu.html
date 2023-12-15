@@ -6,6 +6,7 @@
     <title>ActuIncongru</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../ActuIncongru.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -63,25 +64,98 @@
             <li><a href="bonplan.html">Bon plans tech</a></li>
         </ul>
     </section>
+    <article class="body2">
 
-    <section id="popup">
-        <div id="croix">
-            <p>X</p>
-        </div>
-        <div class="textpopup">
-        <p>Actu Incongru est votre nouveau site d'actu préférez? créez votre compte pour recevoir les infos des leurs publication</p>
-        </div>
-    </section>
+        <section id="popup">
+            <div id="croix">
+                <p>X</p>
+            </div>
+            <div class="textpopup">
+                <p>Actu Incongru est votre nouveau site d'actu préférez? créez votre compte pour recevoir les infos des leurs publication</p>
+            </div>
+        </section>
 
-    <section>
-        <div>
-            <img src="" alt="">
-            <p></p>
-        </div>
-        <div class="basarticle">
-            <div class="arrow"><img src="../../image/fleche-removebg-preview.png" alt=""></div>
-        </div>
-    </section>
+        <section class="contenu">
+            <div class="souscontenu1">
+                <img src="../../image/maxppp-gabriel-attal-ministre-education-nationale-education-ecole-college-lycee-960x640.jpg" alt="politique">
+            </div>
+            <div class="souscontenu2">
+                <p>Redoublement, nouveaux programmes, brevet... le plan du gouvernement pour relever le niveau scolaire
+                </p>
+            </div>
+            <div class="info">
+                <div id="plus">
+                    <div id="infosup1" style="display: none;flex-wrap: wrap;text-align: center;">
+                        <div>
+                        <p>Le ministre de l'Éducation nationale Gabriel Attal a présenté, ce mardi, un plan baptisé "Choc des savoirs", alors que le niveau des élèves français dégringole à l'école.
+                        <span class="gras">« Il y a une vraie urgence nationale »</span>
+                         Nouveaux programmes pour les primaires, mise en place de groupes de niveaux au collège, simplification du redoublement… Plusieurs leviers d’action sont présentés par Gabriel Attal ce mardi afin de
+                        <span class="gras">« relever le niveau » des élèves tricolores </span>
+                        , alors qu’il y a « une vraie urgence nationale ».</p>
+                        </div>
+                        <div class="citation">
+                            <p>Nous devons impérativement élever le niveau des élèves et nous devons donc être plus exigeants.</p>
+                            <br><p class="gras">Gabriel Attal</p><br>
+                            <p>Ministre de l'Education nationale</p>
+                        </div>
+                    </div>
+                    <div class="degrade">
+                        <img class="arrow" id="arrow1" onclick="change(1)" onclick="rotation"  src="../../image/fleche-removebg-preview.png" alt="fleche">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contenaire">
+
+            <div class="articlesecondaire">
+                <h2>Jeux-vidéos</h2>
+                <hr>
+                <section class="contenu">
+                    <div class="souscontenu1">
+                        <a href="jeuxvideos.html">
+                            <div class="fond1 fond" >
+                                <p>GTA 6 : sortira ou sortira pas en 2024 ? Take-Two lâche un gros indice...</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="articlesecondaire">
+                <h2>Réseaux sociaux</h2>
+                <hr>
+                <section class="contenu">
+                    <div class="souscontenu1">
+                        <a href="reseauxsociaux.html">
+                            <div class="fond2 fond" >
+                                <p>Si vous souhaitez désactiver les stories d'un compte précis sans pour autant vous désabonner de son compte, vous pouvez désormais activer le mode sourdine uniquement pour ses stories</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="conteneur">
+                <a href="./jeuxdepoule.html">
+                    <img src="../../image/840e1f290f246880e1f290f245c0e1v-640x427.jpg" alt="poules">
+                    <p>Grippe aviaire : le risque en France passe au niveau « élevé », les volailles confinées</p>
+                </a>
+                <a href="politique.html">
+                    <img src="/image/maxresdefault.jpg" alt="">
+                    <p>Le nouveau parti politique de Tyna fait débat depuis quelques semaines.</p>
+                </a>
+                <a href="bonplan.html">
+                    <img src="/image/fondpcgamer.jpg" alt="pc gamer">
+                    <p>Retrouvez tout les bons plan du site ID config et bien plus..</p>
+                </a>
+        </section>
+
+    </article>
+    <footer>
+        <a href="contact.html">Contact</a>
+        <a href="#">Mention légale</a>
+    </footer>
 </body>
 
 </html>
