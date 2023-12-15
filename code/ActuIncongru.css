@@ -15,6 +15,7 @@
     --noir_principal:#2C2D33;
     --noir_secondaire:#23242A;
     --noir:#1C1D21;
+    --noir-transparant:#00000063;
 }
 
 body{
@@ -129,6 +130,7 @@ nav a{
         position: fixed;
         width: 100%;
         margin-top: 128px;
+        z-index: 2;
     }
     nav{
         height: 150px;
@@ -256,6 +258,16 @@ nav a{
     width: 100%;
     border-radius: 5px;
 }
+@media (min-width: 650px) {
+    .souscontenu1 img{
+        width: 1000px !important;
+        border-radius: 5px;
+    }
+    .souscontenu1{
+        display: flex;
+        justify-content: center;
+    }
+}
 
 .souscontenu2{
     text-align: center;
@@ -314,7 +326,7 @@ h2{
 }
 
 .fond p{
-    background-color: var(--noir_secondaire);
+    background-color: var(--noir-transparant);
     margin: 5px;
     border-radius: 5px;
     font-size: calc(12px + 0.5vw);
@@ -328,6 +340,10 @@ h2{
     align-items: center;
     cursor: pointer;
     border-radius: 5px;
+    justify-content: center;
+}
+.fond a{
+    text-decoration: none;
 }
 
 .fond2{
@@ -358,7 +374,9 @@ h2{
     font-size: calc(15px + 0.5vw);
     padding: 10px;
 }
-
+.souscontenu1 a{
+    text-decoration: none;
+}
 /*   FOOTER   */
 
 footer{
