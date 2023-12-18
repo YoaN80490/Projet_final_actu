@@ -20,4 +20,12 @@ const change = (int) => {
         
     }
 }
-
+valider.addEventListener('click', quiz)
+function quiz() {
+var input = document.getElementById('input').value
+let manche = 1;
+if(input == 'bresil'){
+    manche + 1;
+    stage.innerHTML += manche
+}
+}
