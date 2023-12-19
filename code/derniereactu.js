@@ -1,6 +1,3 @@
-icon.addEventListener("click", () => {
-    nav.classList.toggle("active")
-})
 
 croix.addEventListener("click", () => {
     popup.classList.toggle("fermer")
@@ -20,12 +17,5 @@ const change = (int) => {
         
     }
 }
-valider.addEventListener('click', quiz)
-function quiz() {
-var input = document.getElementById('input').value
-let manche = 1;
-if(input == 'bresil'){
-    manche + 1;
-    stage.innerHTML += manche
-}
-}
+
+
