@@ -70,7 +70,7 @@ clair2.addEventListener('click',function theme() {
         sheet.insertRule(":root{--blanc_principal:#060606 !important}");
         sheet.insertRule(":root{--degrade-noir-bas:linear-gradient(180deg, rgba(236,236,236,1) 0%, rgba(255,255,255,1) 100%) !important}");
         sheet.insertRule(":root{--noir-transparant:#ffffff63 !important}");
-        clair.classList.replace("fa-moon", "fa-sun");
+        clair2.classList.replace("fa-moon", "fa-sun");
         x++
     }
     //on passe de clair a sombre
@@ -91,7 +91,7 @@ clair2.addEventListener('click',function theme() {
         sheet.insertRule(":root{--blanc_principal:#FFF !important}");
         sheet.insertRule(":root{--degrade-noir-bas:linear-gradient(0deg, rgba(44,45,51,1) 0%, rgba(35,36,42,1) 100%) !important}");
         sheet.insertRule(":root{--noir-transparant:#00000063 !important}");
-        clair.classList.replace("fa-sun", "fa-moon");
+        clair2.classList.replace("fa-sun", "fa-moon");
         x = 0
         y=1;
     }
