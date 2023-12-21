@@ -156,7 +156,7 @@ a{
         position: fixed;
         width: 100%;
         margin-top: 128px;
-        z-index: 2;
+        z-index: 8;
     }
     nav{
         height: 150px;
@@ -165,7 +165,7 @@ a{
         overflow-x: scroll;
     }
     .nav{
-        z-index: 2;
+        z-index: 8;
     }
     nav img{
         width: 150px;
@@ -495,7 +495,7 @@ footer a{
 /*       QUIZ     */
 
 #espacejoueur{
-    width: 100%;
+    width: max-content;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -506,6 +506,7 @@ footer a{
     border-radius: 5px;
     color: var(--blanc_principal);
     margin-bottom: 50px;
+    
 }
 #question{
     width: 100%;
@@ -533,4 +534,93 @@ footer a{
 #formulaire button{
     width: 100px;
     height: 30px;
+}
+
+
+/*   7 ERREURS   */
+
+#imgerreur{
+    background: url(/image/Jeu\ Des\ 7\ Erreurs\ Jeux\ Des\ 7\ Erreurs\,\ 7\ Erreurs\ Et\ Erreur\ à\ Trouver\ Les\ 7\ Erreurs.jpg);
+    width: 500px;
+    height: 800px;
+    background-size: cover;
+    z-index: 0;
+    background-position: center;
+    position: absolute;
+}
+
+#imgerreur div{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+}
+#erreur1{
+    bottom: -580px;
+    left: 205px;
+}
+#erreur2{
+    bottom: -450px;
+    left: 250px;
+}
+#erreur3{
+    bottom: -550px;
+    left: 275px;
+}
+#erreur4{
+    bottom: -530px;
+    left: 250px;
+    width: 32px !important;
+    height: 32px !important;
+}
+#erreur5{
+    bottom: -390px;
+    left: 320px;
+}
+#erreur6{
+    bottom: -255px;
+    left: 100px;
+}
+
+#erreur7{
+    bottom: -210px;
+    left: 365px;
+}
+
+.point{
+    border: red solid 3px;
+    transition: 0.1s;
+}
+#score{
+    text-align: center;
+}
+.score{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    z-index:3 ;
+    align-items: end;
+}
+.score p{
+    color: var(--noir);
+    font-size: calc(13px + 0.5vw);
+}
+.espacejoueur{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.espace{
+    margin-top: 800px;
+}
+@media (max-width: 650px){
+    .espacejoueur{
+        transform: scale(0.85);
+    }
+}
+@media (max-width: 450px){
+    .espacejoueur{
+        transform: scale(0.6) !important;
+    }
 }

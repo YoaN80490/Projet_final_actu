@@ -98,6 +98,7 @@ clair2.addEventListener('click',function theme() {
 })
 
 var icon = document.getElementById('icon')
+
 icon.addEventListener("click", () => {
     nav.classList.toggle("active")
 })
