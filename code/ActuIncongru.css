@@ -407,7 +407,7 @@ footer a{
 }
 @media (min-width: 650px) {
     .articlesecondaire{
-        width: 500px !important;
+        width: 325px !important;
     }
 }
 /*     actu terciaire    */
@@ -474,7 +474,7 @@ footer a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 250px;
 }
 
 .separation{
@@ -495,7 +495,7 @@ footer a{
 /*       QUIZ     */
 
 #espacejoueur{
-    width: max-content;
+    width: 100%;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -505,7 +505,7 @@ footer a{
     margin-top: 100px;
     border-radius: 5px;
     color: var(--blanc_principal);
-    margin-bottom: 50px;
+    margin-bottom: 150px;
     
 }
 #question{
@@ -535,6 +535,19 @@ footer a{
     width: 100px;
     height: 30px;
 }
+@media (min-width : 650px){
+    #espacejoueur{
+        margin-bottom: 400px !important;
+    }
+
+}
+
+@media (min-width : 1100px){
+    #espacejoueur{
+        width: max-content !important;
+    }
+}
+
 
 
 /*   7 ERREURS   */
@@ -610,17 +623,23 @@ footer a{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    transform: scale(1.2);
 }
 .espace{
-    margin-top: 800px;
+    margin-top: 650px;
 }
 @media (max-width: 650px){
     .espacejoueur{
-        transform: scale(0.85);
+        transform: scale(0.84);
     }
 }
-@media (max-width: 450px){
+@media (max-width: 410px){
     .espacejoueur{
-        transform: scale(0.6) !important;
+        transform: scale(0.55) !important;
+    }
+}
+@media (min-width : 650px){
+    .espace{
+        margin-top: 950px !important;
     }
 }
