@@ -51,7 +51,7 @@ i:hover{
 }
 hr{
     border: var(--bleu_ciel) solid 1px;
-    width: calc(50px + 1vw);
+    width: calc(55px + 1vw);
 }
 h2{
     color: var(--blanc_principal);
@@ -474,7 +474,7 @@ footer a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 250px;
+    margin-bottom: 100px;
 }
 
 .separation{
@@ -491,7 +491,11 @@ footer a{
 .quiz{
     font-size: 120px;
 }
-
+@media (min-width : 650px){
+    .jeux{
+        margin-bottom: 250px !important;
+    }
+}
 /*       QUIZ     */
 
 #espacejoueur{
@@ -537,7 +541,7 @@ footer a{
 }
 @media (min-width : 650px){
     #espacejoueur{
-        margin-bottom: 400px !important;
+        margin-bottom: 450px !important;
     }
 
 }
@@ -641,5 +645,162 @@ footer a{
 @media (min-width : 650px){
     .espace{
         margin-top: 950px !important;
+    }
+}
+
+/*      HOROSCOPE     */
+
+.bandeau{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*          Flip card       */
+
+.flip-card{
+    height: calc(500px + 5vw);
+    width: calc(300px + 5vw);
+    background-color: var(--noir_secondaire);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    
+}
+.flip-card-derriere{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: auto;
+}
+.flip-card-face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card p{
+    font-size: calc(12px + 0.3vw);
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .flip-card span{
+    font-size: calc(13px + 0.3vw);
+  }
+.flip-card img{
+    background: var(--degrade-noir-bas);
+    border-radius: 50px;
+}
+  .body3{
+    margin-right: 15px;
+    margin-left:15px ;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (min-width : 650px){
+    .body3{
+        justify-content: space-around !important;
+    }
+}
+
+/*    CONTACT    */
+
+
+.item{
+    background-color: var(--noir_secondaire);
+    width: 600px;
+    height: max-content;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.item i{
+    font-size: 42px;
+    color: var(--blanc_principal);
+    margin-bottom: 10px;
+}
+
+.item a{
+    font-size: calc(12px + 0.5vw);
+}
+.item p{
+    font-size: calc(12px + 0.5vw);
+}
+.sousitem{
+    text-align: center;
+}
+@media (max-width: 650px){
+    .item iframe{
+        display: none;
+    }
+    .item{
+        width: 90% !important;
+    }
+}
+
+/* Reseaux  */
+
+
+.reseaux i{
+    font-size: 42px;
+    width: 180px;
+    text-align: center;
+}
+
+.reseaux{
+    background-color: var(--noir_secondaire);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 600px;
+    margin-top: 40px;
+    padding: 20px;
+    height: 400px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+.reseaux a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.reseaux p{
+    font-size: calc(12px + 0.5vw);
+}
+
+@media (max-width: 650px){
+    .reseaux{
+        width: 90% !important;
     }
 }
