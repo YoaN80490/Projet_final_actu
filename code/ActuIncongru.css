@@ -62,8 +62,13 @@ a{
     color: var(--blanc_principal);
     cursor: pointer;
 }
+ul{
+    color: var(--blanc_principal);
+    list-style: none;
+}
 
-/**       HEADER        **/
+
+/*       HEADER        */
 
 .nav{
     display: flex;
@@ -344,7 +349,7 @@ footer a{
 }
 @media (max-width: 650px){
     .arrow{
-        width: 32px;
+        width: 42px;
         z-index: 0 !important;
     }
 }
@@ -745,7 +750,7 @@ footer a{
     border-radius: 5px;
 }
 .item i{
-    font-size: 42px;
+    font-size: 36px;
     color: var(--blanc_principal);
     margin-bottom: 10px;
 }
@@ -772,7 +777,7 @@ footer a{
 
 
 .reseaux i{
-    font-size: 42px;
+    font-size: 36px;
     width: 180px;
     text-align: center;
 }
@@ -802,5 +807,107 @@ footer a{
 @media (max-width: 650px){
     .reseaux{
         width: 90% !important;
+    }
+}
+
+/*   Connection   */ 
+
+
+.conteneur_login{
+    width: 100%;
+    background: var(--noir_secondaire);
+    height: 300px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    border-radius: 5px;
+}
+.conteneur_login fieldset{
+    height: 50px;
+    border: none;
+    padding: 20px;
+}
+.conteneur_login form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.bouton{
+    display: flex;
+    justify-content: end;
+}
+.bouton button{
+    padding: 5px;
+    background-color: var(--bleu_ciel);
+    color: var(--blanc_principal);
+}
+.conteneur_login label{
+    color: var(--blanc_principal);
+    font-size:  calc(12px + 0.5vw);
+}
+.conteneur_login input{
+    color: var(--blanc_principal);
+    width: 100%;
+    background: var(--noir);
+    border: 1px var(--blanc_principal) solid;
+    font-size:  calc(12px + 0.5vw);
+    height: 25px;
+
+}
+
+@media (min-width : 650px){
+    .conteneur_login{
+        width: 600px !important;
+        margin-bottom: 400px !important;
+        margin-top: 180px;
+    }
+}
+
+/*      Jeux vidéos      */
+
+
+h5{
+    font-size: 11px;
+    font-style: italic;
+    color: var(--blanc_principal);
+}
+
+.contenusecondaire{
+    display: flex;
+    justify-content: space-between;
+    background: var(--noir_secondaire);
+}
+
+.contenusecondaire .souscontenu2{
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important ;
+}
+
+.contenusecondaire p{
+    height: 100%;
+    font-size: calc( 7px + 0.8vw);
+    display: flex;
+    align-items: center;
+}
+
+.infosecondaire{
+    background: var(--noir_secondaire);
+}
+.actusecondaire{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.contenusecondaire .degrade{
+    justify-content: center !important;
+}
+
+.infosecondaire img{
+    width: 325px;
+}
+
+@media (max-width: 650px){
+    .infosecondaire img{
+        width: 100%;
     }
 }
