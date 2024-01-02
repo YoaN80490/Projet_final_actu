@@ -49,6 +49,7 @@ i:hover{
 .gras{
     font-weight: bold;
 }
+
 hr{
     border: var(--bleu_ciel) solid 1px;
     width: calc(55px + 1vw);
@@ -73,7 +74,7 @@ ul{
 .nav{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+   
     background-color: var(--noir);
 }
 
@@ -155,7 +156,7 @@ ul{
     }
     .nav{
         position: fixed;
-        width: 97%;
+        width: 100%;
     }
     .menu{
         position: fixed;
@@ -306,7 +307,30 @@ footer a{
     background: var(--degrade-noir-bas);
     display: flex;
     justify-content: end;
+    width: 100%;
 }
+@keyframes sautillement {
+    
+    
+    20% {
+        transform: translate(3px, -20px);
+      
+    }
+    40% {
+        transform: scale(1.2, 0.7);
+    }
+    60% {
+        transform: translate(-3px, -20px);
+    }
+    80% {
+        transform: scale(1.2, 0.7);
+    }
+    
+}
+.arrow:hover{
+    animation: sautillement 1.5s infinite;
+}
+
 .arrow{
     cursor: pointer;
 }
@@ -668,10 +692,10 @@ footer a{
 .flip-card{
     height: calc(500px + 5vw);
     width: calc(300px + 5vw);
-    background-color: var(--noir_secondaire);
     margin-top: 30px;
     margin-bottom: 30px;
     border-radius: 10px;
+    background: var(--noir_secondaire);
 }
 .flip-card-inner{
     position: relative;
@@ -715,9 +739,9 @@ footer a{
   .flip-card span{
     font-size: calc(13px + 0.3vw);
   }
-.flip-card img{
-    background: var(--degrade-noir-bas);
-    border-radius: 50px;
+.flip-card-face{
+    background: url(/image/bluering.png);   
+    background-position: center;
 }
   .body3{
     margin-right: 15px;
@@ -867,33 +891,46 @@ footer a{
 
 
 h5{
-    font-size: 11px;
+    font-size: calc(7px + 0.5vw);
     font-style: italic;
     color: var(--blanc_principal);
 }
 
 .contenusecondaire{
     display: flex;
-    justify-content: space-between;
     background: var(--noir_secondaire);
+    border-radius: 5px;
 }
 
 .contenusecondaire .souscontenu2{
     display: flex;
     flex-direction: column;
     padding: 0 !important ;
+    width: 100%;
+    align-items: center;
 }
+
 
 .contenusecondaire p{
     height: 100%;
-    font-size: calc( 7px + 0.8vw);
+    font-size: calc( 12px + 0.5vw);
     display: flex;
     align-items: center;
+}
+.actusecondaire ul{
+    font-size: calc( 12px + 0.5vw);
 }
 
 .infosecondaire{
     background: var(--noir_secondaire);
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
+
 .actusecondaire{
     margin-bottom: 20px;
     margin-top: 20px;
@@ -903,11 +940,47 @@ h5{
 }
 
 .infosecondaire img{
-    width: 325px;
+    width: 500px;
 }
 
 @media (max-width: 650px){
     .infosecondaire img{
         width: 100%;
     }
+    
 }
+
+@media (max-width: 360px){
+    .contenusecondaire p{
+        font-size: 11px;
+    }
+    
+    .body2{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+
+@media (min-width: 1000px){
+    .actusecondaire{
+        width: 1000px;
+    }
+    
+}
+@media (min-width: 650px){
+    .tiny img{
+        max-width: 300px;
+        max-height: 200px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 650px){
+    .tiny img{
+        max-width: 150px;
+        max-height: 100px;
+        border-radius: 5px;
+    }
+}
+        
