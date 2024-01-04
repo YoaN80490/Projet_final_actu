@@ -102,3 +102,4 @@ var icon = document.getElementById('icon')
 icon.addEventListener("click", () => {
     nav.classList.toggle("active")
 })
+
