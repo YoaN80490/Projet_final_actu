@@ -586,7 +586,7 @@ footer a{
 /*   7 ERREURS   */
 
 #imgerreur{
-    background: url(/image/Jeu\ Des\ 7\ Erreurs\ Jeux\ Des\ 7\ Erreurs\,\ 7\ Erreurs\ Et\ Erreur\ à\ Trouver\ Les\ 7\ Erreurs.jpg);
+    background: url(../image/Jeu\ Des\ 7\ Erreurs\ Jeux\ Des\ 7\ Erreurs\,\ 7\ Erreurs\ Et\ Erreur\ à\ Trouver\ Les\ 7\ Erreurs.jpg);
     width: 500px;
     height: 800px;
     background-size: cover;
@@ -740,7 +740,7 @@ footer a{
     font-size: calc(13px + 0.3vw);
   }
 .flip-card-face{
-    background: url(/image/bluering.png);   
+    background: url(../image/bluering.png);   
     background-position: center;
 }
   .body3{
